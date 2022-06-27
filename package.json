@@ -1,7 +1,7 @@
 {
     "name": "react-native-csj-ad",
     "title": "react-native 穿山甲广告",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "给rn封装的穿山甲广告",
     "main": "index.ts",
     "scripts": {
@@ -30,5 +30,5 @@
         "react": "17.0.2",
         "react-native": "0.66.4"
     },
-    "files": ["android", "docs", "ios", "src", "index.ts", "package.json", "react-native-ad.podspec", "README.md", "LICENSE.md"]
+    "files": ["android", "docs", "ios", "src", "index.ts", "package.json", "react-native-csj-ad.podspec", "README.md", "LICENSE.md"]
 }
