@@ -41,13 +41,13 @@ public class RewardVideo extends ReactContextBaseJavaModule {
     //准备激励回调
     AdBoss.prepareReward(promise, mContext);
     // 启动激励视频页面
-    if (provider.equals("腾讯")) {
-      startTx(codeId);
-    } else if (provider.equals("快手")) {
-      startKs(codeId);
-    } else {
+    // if (provider.equals("腾讯")) {
+    //   startTx(codeId);
+    // } else if (provider.equals("快手")) {
+    //   startKs(codeId);
+    // } else {
       startTT(codeId);
-    }
+    // }
   }
 
   /**
