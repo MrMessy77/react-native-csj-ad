@@ -206,6 +206,23 @@ public class RewardActivity extends Activity {
           AdBoss.is_reward = true;
         }
 
+        /**
+           * 激励视频播放完毕，验证是否有效发放奖励的回调 4400版本新增
+           *
+           * @param isRewardValid 奖励有效
+           * @param rewardType 奖励类型，0:基础奖励 >0:进阶奖励
+           * @param extraInfo 奖励的额外参数
+           */
+        @Override
+          public void onRewardArrived(boolean isRewardValid, int rewardType, Bundle extraInfo){
+              if (isRewardValid) {
+                  // TToast.show(_this, "验证:成功  数量:" + rewardAmount + " 奖励:" + rewardName, Toast.LENGTH_LONG);
+              } else {
+                  // TToast.show(_this, "头条激励视频验证:" + "失败 ...", Toast.LENGTH_SHORT);
+              }
+              AdBoss.is_reward = true;
+          }
+
         @Override
         public void onSkippedVideo() {
           //激励视频不允许跳过...

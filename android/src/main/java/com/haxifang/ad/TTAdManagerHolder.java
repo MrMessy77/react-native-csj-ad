@@ -33,7 +33,15 @@ public class TTAdManagerHolder {
     final Boolean debug
   ) {
     if (!sInit) {
-      TTAdSdk.init(context, buildConfig(context, appid, debug));
+      TTAdSdk.init(context, buildConfig(context, appid, debug), new TTAdSdk.InitCallback() {
+        @Override
+        public void success() {
+        }
+
+        @Override
+        public void fail(int code, String msg) {
+        }
+      });
       sInit = true;
     }
   }
@@ -49,7 +57,7 @@ public class TTAdManagerHolder {
       .appName(AdBoss.appName)
       .titleBarTheme(TTAdConstant.TITLE_BAR_THEME_DARK)
       .allowShowNotify(true) //是否允许sdk展示通知栏提示
-      .allowShowPageWhenScreenLock(true) //是否在锁屏场景支持展示广告落地页
+      // .allowShowPageWhenScreenLock(true) //是否在锁屏场景支持展示广告落地页
       .debug(debug) //测试阶段打开，可以通过日志排查问题，上线时去除该调用
       .directDownloadNetworkType() //允许直接下载的网络状态集合
       .supportMultiProcess(false)

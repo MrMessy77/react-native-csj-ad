@@ -1,7 +1,7 @@
 {
     "name": "react-native-csj-ad",
     "title": "react-native 穿山甲广告",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "给rn封装的穿山甲广告",
     "main": "index.ts",
     "scripts": {
