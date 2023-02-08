@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # optional - use expanded license entry instead:
   # s.license    = { :type => "MIT", :file => "LICENSE" }
-  s.authors      = { "wangbin" => "wangbin@haxibiao.com" }
+  s.authors      = { "MrMessy" => "313691730@qq.com" }
   s.platforms    = { :ios => "9.0" }
   s.source       = { :git => "https://github.com/MrMessy77/react-native-csj-ad.git", :tag => "#{s.version}" }
 
@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   # ...
   # s.dependency "..."
 
-  s.dependency 'Ads-CN', '4.3.0.3'
+  s.dependency 'Ads-CN', '5.0.0.5'
 end
 

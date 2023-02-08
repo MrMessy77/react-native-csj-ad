@@ -1,7 +1,7 @@
 {
     "name": "react-native-csj-ad",
     "title": "react-native 穿山甲广告",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "给rn封装的穿山甲广告",
     "main": "index.ts",
     "scripts": {
@@ -9,8 +9,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/haxibiao/react-native-ad.git",
-        "baseUrl": "https://github.com/haxibiao/react-native-ad"
+        "url": "git+https://github.com/MrMessy77/react-native-csj-ad.git",
+        "baseUrl": "https://github.com/MrMessy77/react-native-csj-ad"
     },
     "keywords": [
         "react-native"

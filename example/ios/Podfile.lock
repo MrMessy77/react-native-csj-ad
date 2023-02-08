@@ -1,5 +1,43 @@
 PODS:
+  - Ads-CN (5.0.0.5):
+    - Ads-CN/BUAdSDK (= 5.0.0.5)
+  - Ads-CN/BUAdSDK (5.0.0.5):
+    - Ads-CN/Dep_Accurate
+  - Ads-CN/Dep_Accurate (5.0.0.5):
+    - BUAdSDK (= 0.1.1.4)
+    - BURelyFoundation/CSJ (= 0.0.3.21)
   - boost (1.76.0)
+  - BUAdSDK (0.1.1.4):
+    - BUAdSDK/BUAdSDK (= 0.1.1.4)
+  - BUAdSDK/BUAdSDK (0.1.1.4)
+  - BURelyFoundation/AFNetworking (0.0.3.21)
+  - BURelyFoundation/BURelyFoundation (0.0.3.21)
+  - BURelyFoundation/CSJ (0.0.3.21):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Foundation (0.0.3.21):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.0.3.21):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/HM (0.0.3.21)
+  - BURelyFoundation/NETWork (0.0.3.21):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/SDWebImage (0.0.3.21):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/YYModel (0.0.3.21)
+  - BURelyFoundation/ZFPlayer (0.0.3.21):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.0.3.21):
+    - BURelyFoundation/Foundation
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.67.2)
@@ -272,6 +310,9 @@ PODS:
   - React-jsinspector (0.67.2)
   - React-logger (0.67.2):
     - glog
+  - react-native-csj-ad (1.0.4):
+    - Ads-CN (= 5.0.0.5)
+    - React
   - React-perflogger (0.67.2)
   - React-RCTActionSheet (0.67.2):
     - React-Core/RCTActionSheetHeaders (= 0.67.2)
@@ -383,6 +424,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-csj-ad (from `../node_modules/react-native-ad`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -399,6 +441,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Ads-CN
+    - BUAdSDK
+    - BURelyFoundation
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -449,6 +494,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-csj-ad:
+    :path: "../node_modules/react-native-ad"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -477,7 +524,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Ads-CN: 6746eaacd53136acc556a708d42989046e5f7acf
   boost: a7c83b31436843459a1961bfd74b96033dc77234
+  BUAdSDK: 157702b4605d6a792838cc705c3d3d5bed962b93
+  BURelyFoundation: b8d1415409535bbab6242ce70a848aa21a639716
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
   FBLazyVector: 244195e30d63d7f564c55da4410b9a24e8fbceaa
@@ -507,6 +557,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 52beb652bbc61201bd70cbe4f0b8edb607e8da4f
   React-jsinspector: 595f76eba2176ebd8817a1fffd47b84fbdab9383
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
+  react-native-csj-ad: c739b29089ae2b7de0e3a85722d3701d2fe07e6b
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a
   React-RCTAnimation: 08d4cac13222bb1348c687a0158dfd3b577cdb63
@@ -524,4 +575,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 9af65361d8a000b8f3b07171fd9cfcc3632878eb
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

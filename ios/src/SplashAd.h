@@ -10,11 +10,6 @@
 #import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
 
-#import <BUAdSDK/BUAdSDKManager.h>
-#import <BUAdSDK/BURewardedVideoModel.h>
-#import "BUAdSDK/BUSplashAdView.h"
-#include "AdBoss.h"
-
 @interface SplashAd : RCTEventEmitter <RCTBridgeModule>
 {
 }

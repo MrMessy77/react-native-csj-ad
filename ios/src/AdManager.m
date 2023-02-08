@@ -11,7 +11,6 @@
 
 #import <BUAdSDK/BUAdSDKManager.h>
 #import <BUAdSDK/BURewardedVideoModel.h>
-#import "BUAdSDK/BUSplashAdView.h"
 #include "AdBoss.h"
 
 
